@@ -12,7 +12,13 @@ public class Activity2 {
 			break;
 			}
 		}
-		System.out.println(sum);
+		
+	if (sum ==30) {
+		System.out.println(sum==30);
+	}
+	else {
+		System.out.println(sum==30);
+	}
 	
 		
 
