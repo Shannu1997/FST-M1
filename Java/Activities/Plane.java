@@ -23,8 +23,8 @@ public class Plane {
 	}
 	
 	public Date takeOff() {
-		this.lastTimeLanded = new Date(); 
-		return lastTimeLanded;
+		this.lastTimeTookOf = new Date(); 
+		return lastTimeTookOf;
 	}
 
 	public void land() {
