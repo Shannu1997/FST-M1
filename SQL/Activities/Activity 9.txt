@@ -1,0 +1,30 @@
+Select CUSTOMER_ID,CUSTOMER_NAME, SALESMAN_NAME
+FROM customers c
+INNER JOIN Salesman s
+on c.SALESMAN_ID = s.SALESMAN_ID;
+
+
+
+Select CUSTOMER_NAME, SALESMAN_NAME, c.GRADE
+    From customers c
+    inner join salesman s
+ on c.SALESMAN_ID = s.SALESMAN_ID
+where c.grade<300
+	order by customer_id;
+
+
+
+    Select CUSTOMER_NAME, SALESMAN_NAME, s.COMMISSION, s.SALESMAN_ID
+    From customers c
+    inner join salesman s
+ on c.SALESMAN_ID = s.SALESMAN_ID
+where s.COMMISSION>12
+	order by COMMISSION;
+
+Select o.ORDER_NO,o.ORDER_DATE,o.PURCHASE_AMOUNT,c.CUSTOMER_NAME, s.SALESMAN_NAME,s.COMMISSION
+FROM ORDERS o
+inner join customers c
+on o.CUSTOMER_ID = c.CUSTOMER_ID
+Inner join Salesman s
+on o.SALESMAN_ID = s.SALESMAN_ID
+order by o.ORDER_NO;

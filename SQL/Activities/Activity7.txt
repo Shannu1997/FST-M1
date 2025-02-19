@@ -1,0 +1,14 @@
+Select SUM(PURCHASE_AMOUNT) AS Total_amnt
+From orders;
+
+Select AVG(PURCHASE_AMOUNT) Avg_PurchAmnt 
+From orders;
+
+Select MAX(PURCHASE_AMOUNT) Max_PurchAmnt 
+From orders;
+
+Select MIN(PURCHASE_AMOUNT) Min_PurchAmnt 
+From orders;
+
+Select  COUNT(distinct SALESMAN_ID) SalesManHeadCount
+From orders;

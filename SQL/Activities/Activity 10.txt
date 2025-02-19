@@ -1,0 +1,7 @@
+Select * From orders where salesman_id =(select distinct salesman_id from orders where customer_id =3007);
+
+Select * From orders where salesman_id =(select SALESMAN_ID from Salesman where SALESMAN_CITY ='New York');
+
+Select COUNT(CUSTOMER_NAME) from customers where Grade >(Select AVG(GRADE) FROM customers where CITY ='New York');
+
+Select * from orders where SALESMAN_ID = (Select SALESMAN_ID from salesman where COMMISSION = (SELECT MAX(COMMISSION) from salesman ));
